@@ -7,10 +7,14 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+"heroku-postbuild": "ng build --prod"
+
   },
   "private": true,
   "dependencies": {
+"@angular/cli”: “1.4.9”,
+"@angular/compiler-cli": "^4.4.6",
     "@angular/animations": "~9.0.1",
     "@angular/common": "~9.0.1",
     "@angular/compiler": "~9.0.1",
@@ -22,7 +26,9 @@
     "angular-google-charts": "^0.1.6",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
-    "zone.js": "~0.10.2"
+    "zone.js": "~0.10.2",
+"express": "latest",
+"path":"latest"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.900.2",
